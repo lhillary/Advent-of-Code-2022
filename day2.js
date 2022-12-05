@@ -10,13 +10,6 @@ const characterMap = {
     'Z': 3 // scissors
 }
 
-// rock(1) beats scissors (3) = -2
-// rock(1) loses paper(2) = -1
-// paper(2) beats rock(1) = 1
-// paper(2) loses scissors(3) = 1
-// scissors(3) beats paper(2) = 1
-// scissors(3) loses rock(1) = 2
-
 // reading and basic formatting of initial file
 const lines = fs
     .readFileSync('day2.txt', { encoding: 'utf-8' })
