@@ -4,7 +4,7 @@ const fs = require('fs');
 const range = (start, stop) =>  [...Array(stop - start + 1)].map((_, i) => start + i);
 
 const lines = fs
-    .readFileSync('Day4.txt', { encoding: 'utf-8' })
+    .readFileSync('day4.txt', { encoding: 'utf-8' })
     .split('\n')
     .map((line) => {
       let first = line.split(',')[0].split('-'),
